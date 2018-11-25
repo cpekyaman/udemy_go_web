@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Slices</title>
+    </head>    
+    <body>
+        <h1>Turtles</h1>
+        <ul>
+            {{range .}}
+            <li>{{.}}</li>
+            {{end}}
+        </ul>
+
+        <h1>Turtles Again</h1>
+        <ul>
+            {{range $index, $element := .}}
+            <li>{{$index}} - {{$element}}</li>
+            {{end}}
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>{{.Title}}</title>
+    </head>    
+    <body>
+        <h1>Ho {{dmy .Time}}</h1>
+        <ul>
+            {{range .Sages}}
+            <li>{{uc .Name}}</li>
+            {{end}}
+        </ul>
+
+        <h1>Ha</h1>
+        <ul>
+            {{range .Sages}}
+            <li>{{ft .Name}} - {{.Motto}}</li>
+            {{end}}
+        </ul>
+    </body>
+</html>
